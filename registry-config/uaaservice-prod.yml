@@ -20,7 +20,7 @@ eureka:
         registerWithEureka: true
         fetchRegistry: true
         serviceUrl:
-            defaultZone: http://admin:admin@localhost:8761/eureka/
+            defaultZone: http://admin:admin@jhipster-registry.dreams.svc.cluster.local:8761/eureka/
 
 spring:
     devtools:
@@ -30,7 +30,7 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/DRIMS-UAA
+        url: jdbc:postgresql://uaaservice-postgresql.dreams.svc.cluster.local:5432/DRIMS-UAA
         name:
         username: postgres
         password: postgres
@@ -48,7 +48,7 @@ spring:
     data:
         elasticsearch:
             cluster-name: dreams-cluster
-            cluster-nodes: localhost:9300
+            cluster-nodes: elasticsearch.dreams.svc.cluster.local:9300
     mail:
         host: smtp.gmail.com
         port: 587
