@@ -48,7 +48,7 @@ spring:
     data:
         elasticsearch:
             cluster-name: dreams-cluster
-            cluster-nodes: elasticsearch.dreams.svc.cluster.local:9300
+            cluster-nodes: elasticsearch-discovery.dreams.svc.cluster.local:9300
     mail:
         host: smtp.gmail.com
         port: 587
