@@ -12,7 +12,7 @@
 
 eureka:
     instance:
-        prefer-ip-address: true
+        prefer-ip-address: false
     client:
         enabled: true
         healthcheck:
